@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juli Haager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+    .birtdayImg {
+        height: 100vh;
+        background-image: url("birtday_img.jpg");
+        background-size: cover;
+    }
+ 
+    .birtdayImg h1 {
+        padding-top:50vh;
+    }
+
+    .popup {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container-fluit p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Suchleiste</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Hauptseite <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">???</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">???</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <div class="container-fluit p-0 birtdayImg">
+            <h1 class="text-light font-weight-bold text-light text-center">Happy Birtday Mum</h1>
+        </div>
+        <div class="container">
+
+            Happybirtday Mum!
+            Das wird die deine <i>eigene Seite sein!</i> ich konnte sie nicht eigenständig machen, weil ich natürlich nicht weiß was du auf deine Seite haben magst.
+            Deshalb schenke ich dir einen Gutschein für <i>einen Nachmittag/Vormittag voller kreativitat für deine Webseite</i> (Natürlich musst du nicht die ganze zeit vor dem Computer sitzen).
+            
+            LG Caius
+
+        </div>
+
+        <div class="popup bg-dark p-2">
+            <h1 >Feedback</h1>
+            <input class="form-control" id="emailInput" placeholder="E-mail">
+            <input class="form-control" id="nameInput" placeholder="Name">
+            <button class="btn btn-outline-info" id="submitBtn">Bewerten</button>
+        </div>
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", function () {
+                alert("Hi " + document.getElementById("nameInput").value + ", wie findest du mein Gutschein?");
+            });
+        </script>
+    </div>
+</body>
+</html>
